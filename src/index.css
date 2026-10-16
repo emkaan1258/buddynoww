@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+  body { @apply font-sans text-navy bg-white antialiased overflow-x-hidden; }
+  h1, h2, h3, h4 { @apply font-display; letter-spacing: -0.04em; }
+}
+
+@layer utilities {
+  .dots { background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px); background-size: 24px 24px; }
+}
